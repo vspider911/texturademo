@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Текстура — барбершоп на Генерала Белова | Демо-сайт с онлайн-записью</title>
+<meta name="description" content="Демо-версия сайта барбершопа «Текстура» на ул. Генерала Белова, 1/8: прайс по уровню мастера, онлайн-запись, отзывы. Телефон, цены и рейтинг условные.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="strip">Демо-версия сайта — телефон, цены и рейтинг условные</div>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a href="#" class="logo" aria-label="Текстура — на главную">ТЕКСТУРА<span>barbershop</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#prices">Цены</a>
+      <a href="#team">Мастера</a>
+      <a href="#booking">Запись</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+    <a class="btn btn--accent top__btn" href="#booking">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__media"><img src="img/hero.webp" alt="Зал барбершопа: кожаные кресла, зеркала и кирпичная стена" width="1800" height="1196" fetchpriority="high"></div>
+    <div class="hero__shade"></div>
+    <div class="wrap hero__in">
+      <p class="status mono" data-status><i></i><span>Ежедневно 10:00–21:00</span></p>
+      <h1 class="hero__title">Мужские стрижки<br>и борода <em>на Генерала Белова</em></h1>
+      <p class="hero__lead">Уютный барбершоп у остановки «Улица Генерала Белова». Кофе, спокойная музыка и мастера, которые слушают, чего хотите вы. Цена видна заранее, запись — за минуту.</p>
+      <div class="hero__cta">
+        <a class="btn btn--accent btn--lg" href="#booking">Записаться онлайн</a>
+        <a class="btn btn--line btn--lg" href="#prices">Цены</a>
+      </div>
+      <ul class="stats">
+        <li><b>4,9</b><span>рейтинг на картах</span></li>
+        <li><b>230</b><span>оценок клиентов</span></li>
+        <li><b>−300 ₽</b><span>на первую стрижку</span></li>
+        <li><b>10–21</b><span>без выходных</span></li>
+      </ul>
+    </div>
+    <div class="hero__word" aria-hidden="true">ТЕКСТУРА · ТЕКСТУРА · ТЕКСТУРА · </div>
+  </section>
+
+  <!-- PRICES -->
+  <section class="section" id="prices">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker mono">01 — Цены</p>
+        <h2>Одна услуга — одна понятная цена</h2>
+        <p class="head__sub">Цена зависит от опыта мастера. Выберите уровень — и все цены ниже пересчитаются.</p>
+      </div>
+      <div class="levels reveal" role="tablist" aria-label="Уровень мастера" id="levels"></div>
+      <p class="levels__hint reveal" id="levelHint"></p>
+      <div class="cards" id="cards"></div>
+      <div class="extras reveal">
+        <h3>Дополнительно</h3>
+        <ul id="extras"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="wrap promo__in reveal">
+      <div class="promo__text">
+        <p class="kicker mono">Первый визит</p>
+        <h2>−300 ₽ на первую стрижку</h2>
+        <p>Скидка на первую стрижку от 1 800 ₽ по промокоду <b class="code mono">ПЕРВЫЙ</b>. Введите его при онлайн-записи — сумма пересчитается сразу.</p>
+        <a class="btn btn--accent" href="#booking" data-promo>Записаться со скидкой</a>
+      </div>
+      <div class="promo__img"><img src="img/promo.webp" alt="Барбер оформляет бороду ножницами" width="1200" height="1807"></div>
+    </div>
+  </section>
+
+  <!-- HOW (sticky scene) -->
+  <section class="how" id="how">
+    <div class="wrap how__in">
+      <div class="how__stick">
+        <div class="how__screen">
+          <div class="how__shot is-on"><img src="img/step1.webp" alt="Барбер делает фейд машинкой" width="1200" height="800"></div>
+          <div class="how__shot"><img src="img/step2.webp" alt="Барбер прорабатывает контур опасной бритвой" width="1200" height="1798"></div>
+          <div class="how__shot"><img src="img/step3.webp" alt="Готовая стрижка и оформленная борода" width="1200" height="1800"></div>
+          <div class="how__badge mono"><b data-how-num>01</b> / 03</div>
+        </div>
+      </div>
+      <div class="how__steps">
+        <p class="kicker mono">02 — Как проходит визит</p>
+        <h2>Не просто «чик-чик»</h2>
+        <div class="step"><b class="mono">01</b><h3>Кофе и разговор</h3><p>Встретим, заберём куртку, нальём кофе. Мастер расспросит, что хотите, и предложит варианты под форму головы.</p></div>
+        <div class="step"><b class="mono">02</b><h3>Стрижка и борода</h3><p>Аккуратная работа без спешки: машинка, ножницы, опасная бритва для чёткого контура.</p></div>
+        <div class="step"><b class="mono">03</b><h3>Укладка и советы</h3><p>Покажем, как укладывать дома, подскажем средства. А бот напомнит, когда пора снова.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team" id="team">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker mono">03 — Мастера</p>
+        <h2>Мастера, которых хвалят в отзывах</h2>
+        <p class="head__sub">В рабочей версии здесь будут фото мастеров, их работы и запись к конкретному барберу.</p>
+      </div>
+      <div class="team__grid" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section booking" id="booking">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker mono">04 — Онлайн-запись</p>
+        <h2>Записаться в «Текстуру»</h2>
+        <p class="head__sub">Без перехода на другие сайты и без звонков.</p>
+      </div>
+      <form class="book reveal" id="bookForm" novalidate>
+        <div class="book__col">
+          <h3 class="book__h"><b>1</b>Услуги</h3>
+          <div class="seg" id="bookLevels"></div>
+          <div class="svc" id="svcList"></div>
+        </div>
+        <div class="book__col">
+          <h3 class="book__h"><b>2</b>День и время</h3>
+          <div class="days" id="days"></div>
+          <div class="slots" id="slots"></div>
+          <p class="legend"><span><i class="lg"></i>свободно</span><span><i class="lg lg--busy"></i>занято</span></p>
+
+          <h3 class="book__h"><b>3</b>Контакты</h3>
+          <label class="field"><span>Имя</span><input name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+          <label class="field"><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__"></label>
+          <label class="field"><span>Промокод</span><input name="promo" placeholder="Например, ПЕРВЫЙ" autocomplete="off"></label>
+
+          <div class="sum">
+            <div class="sum__row"><span>Выбрано</span><b id="sumList">ничего</b></div>
+            <div class="sum__row"><span>Когда</span><b id="sumWhen">—</b></div>
+            <div class="sum__row sum__row--promo" id="sumPromoRow" hidden><span>Промокод</span><b>−300 ₽</b></div>
+            <div class="sum__total"><span>Итого</span><b id="sumTotal">0 ₽</b></div>
+          </div>
+          <p class="err" id="bookErr" role="alert"></p>
+          <button class="btn btn--accent btn--lg btn--wide" type="submit">Записаться</button>
+          <p class="note">Это демо: заявка никуда не отправляется. В рабочей версии она придёт администратору в Telegram, а клиенту — напоминание.</p>
+        </div>
+      </form>
+      <div class="done" id="done" hidden>
+        <h3>Вы записаны</h3>
+        <p id="doneText"></p>
+        <button class="btn btn--line" type="button" id="doneBack">Записаться ещё</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about">
+    <div class="wrap about__in">
+      <div class="about__img reveal"><img src="img/interior.webp" alt="Длинный зал барбершопа с креслами и лампами" width="1200" height="1800"></div>
+      <div class="about__text reveal">
+        <p class="kicker mono">05 — Атмосфера</p>
+        <h2>Чисто мужская точка без суеты</h2>
+        <p>Небольшой зал на несколько кресел, приятный свет и фоновая музыка. Пока ждёте — кофе и игровая приставка.</p>
+        <ul class="facts">
+          <li>Кофе-машина и чай с собой</li>
+          <li>Игровая приставка в зоне ожидания</li>
+          <li>Можно с собакой до 35 см</li>
+          <li>Парковка рядом, есть пандус</li>
+          <li>Оплата картой и наличными</li>
+          <li>Премиальная косметика для укладки</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker mono">06 — Отзывы</p>
+        <h2>Что говорят клиенты</h2>
+      </div>
+      <div class="rv" id="rv"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section contacts" id="contacts">
+    <div class="wrap contacts__in">
+      <div class="reveal">
+        <p class="kicker mono">07 — Контакты</p>
+        <h2>Генерала Белова, 1/8</h2>
+        <dl class="dl">
+          <dt>Адрес</dt><dd>Москва, ул. Генерала Белова, 1/8</dd>
+          <dt>Как добраться</dt><dd>Остановка «Улица Генерала Белова» — 50 м. Метро «Домодедовская» — 1,6 км</dd>
+          <dt>Часы</dt><dd>Ежедневно 10:00–21:00 <span class="status status--inline" data-status><i></i><span></span></span></dd>
+          <dt>Телефон</dt><dd><a href="tel:+70000000000">+7 (000) 000-00-00</a></dd>
+        </dl>
+        <div class="contacts__btns">
+          <a class="btn btn--accent" href="tel:+70000000000">Позвонить</a>
+          <a class="btn btn--line" href="#contacts">WhatsApp</a>
+          <a class="btn btn--line" href="#contacts">Telegram</a>
+          <a class="btn btn--line" href="https://yandex.ru/maps/?rtext=~55.624703,37.71577&rtt=auto" target="_blank" rel="noopener">Маршрут</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Текстура на карте" src="https://yandex.ru/map-widget/v1/?ll=37.71577%2C55.624703&z=16&pt=37.71577%2C55.624703%2Cpm2orm" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo">ТЕКСТУРА</span>
+    <span>Демо-версия сайта · ул. Генерала Белова, 1/8 · телефон, цены и рейтинг условные</span>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn--line" href="tel:+70000000000">Позвонить</a>
+  <a class="btn btn--accent" href="#booking">Записаться</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
