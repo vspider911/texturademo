@@ -18,7 +18,7 @@
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
 @supports (overflow:clip){html,body{overflow-x:clip}}
-body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans)}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 button,input{font:inherit;color:inherit}
